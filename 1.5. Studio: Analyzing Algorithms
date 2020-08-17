@@ -1,0 +1,32 @@
+1.a. O(1)
+1.b. O(n)
+1.c. O(n^2)
+1.d. O(log n)
+
+2.a.  (reversed = '') = O(1)
+
+      (for c in str:) = O(n)
+          (reversed = c + reversed) = O(1)
+          
+  O(n)
+      
+2.b.  (for row_idx in matrix.length:) = O(n)
+        (row = matrix[row_idx]) = O(1)
+        (for col_idx in row:) = O(n)
+          (print row[col_idx]) = O(1)
+          (print " ") = O(1)
+        (print "\n") = O(1)
+        
+  O(n^2)
+  
+2.c.  (reversed_strings = []) = O(1)
+
+      (for str in strings:) = O(n)
+
+          (reversed = '') = O(1)
+
+          (for c in str:) = O(1)      ***if assuming 10 characters at most....***
+              (reversed = c + reversed) = O(1)
+
+          (reversed_strings.append(reversed)) = O(1)
+  O(n)        
